@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body_class %}template-{{ self.get_verbose_name|slugify }}{% endblock %}
+
+{% block content %}
+    <article>
+        <h3>{{ self.title }}</h3>
+        {{ self.body }}
+    </article>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+{%load static%}
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br>
+                <div class="row center"><img class="card-panel hoverable" id="responsive-img" src="{% static 'images/logo.jpg'%}" alt="image was not loaded!" style="width:30vh"></div>
+            </div>
+            <div class="row center">
+                <a href="{% url 'wagtailadmin_home' %}" id="download-button" class="btn-large waves-effect waves-light">Get Involved</a>
+            </div>
+        </div>
+        <div class="row card center blue-grey darken-4 z-depth-5">
+            <h5 class="header white-text col s12 light">With the Computing Club in Skagit Valley College</h5>
+            <h6 class="col s12 white-text light center header">SVC Computing Club inspires new students to get involved in Computer Science and related fields</h6>
+        </div>
+        <div class="parallax"><img class="responsive-img" src="{% static 'images/123.jpg'%}" alt="Unsplashed background img 1"></div>
+    </div>
+
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container" id="">
+            <div class="section">
+                <!--   Promo Section   -->
+                <div class="row">
+                    <!--   CC Section   -->
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="mdi-action-settings-ethernet"></i>
+                            <p class="promo-caption">Computer Science</p>
+                            <p class="light center">This degree is intended to prepare students to transfer to Washington’s public four-year colleges and universities and many private colleges with junior standing and the majority of the prerequisites for selected science majors completed. This degree partially fulfills the general education requirements as explained in the AA-DTA degree. You will need to take additional credits from Social Science and the Humanities Distribution Areas at SVC or the four-year transfer institution to satisfy bachelor’s degree requirements.</p>
+                        </div>
+                    </div>
+                    <!--   CIS Section   -->
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="mdi-action-settings-input-hdmi"></i>
+                            <p class="promo-caption">Computer Information Systems</p>
+                            <p class="light center">The Computer Information Systems program is designed to expose students to a broad spectrum of disciplines within the field of information technology: operating systems, hardware support, network administration, application software, database design and programming. With successful completion of the program, students will have discovered the area which best fits their interest and aptitude, and be prepared to pursue entry-level positions or further education.</p>
+                        </div>
+                    </div>
+                    <!--   MIT Section   -->
+                    <div class="col s12 m4">
+                        <div class="center promo">
+                            <i class="mdi-action-3d-rotation"></i>
+                            <p class="promo-caption">Multimedia & Interactive Technology</p>
+                            <p class="light center">Program coursework includes web design, digital photography, image manipulation, illustration, user interface design, digital marketing, digital videography as well as programming and scripting basics. SVC's Multimedia & Interactive Technology program will prepare students for work in media-rich fields of web design, graphic arts, or video game development. This program can be completed entirely online.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <div class="row center">
+                    <h3 class="light header">Computing Club Showcase</h3>
+                    <p class="col s12 caption">Checkout what members of the club are creating. Get inspired by these beautiful projects and you can even start your own project to be showcased here.</p>
+                    <a href="/showcase/" class="btn-large waves-effect waves-light">Explore our Showcase</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
